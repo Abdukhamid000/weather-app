@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;700&family=Josefin+Sans:wght@300;400;500;600;700&family=League+Spartan:wght@100;200;300;400;500;600;700&family=Outfit:wght@200;400;600;800&family=Poppins:wght@400;500;600&family=Roboto:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.1);
+  border: 1.5px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body {
+  background: url("./pexels-pixabay-219692.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background: linear-gradient(0deg, #000000, #000000), #000000;
+  opacity: 0.8;
+  border-radius: 55px;
+  padding: 53px 70px 31px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.errmessage {
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 0;
+  font-size: 35px;
+}
+
+.card__search label {
+  position: relative;
+}
+
+.card__search img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__search span {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding: 25px;
+  margin: 7px 7px;
+}
+
+input {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    #585858;
+
+  border-radius: 55px;
+  width: 100%;
+  font-size: 30px;
+  line-height: 45px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 10px 10px 10px 39px;
+  border: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.card__content {
+  margin-top: 42px;
+  color: rgba(249, 249, 249, 0.98);
+}
+
+.card__content h3 {
+  margin-top: 19px;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.card__content span,
+.card__content p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.info {
+  margin-top: 8px;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__search span {
+  cursor: pointer;
+}
+
+.social {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 15px;
+  }
+  input {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .card__search img {
+    width: 20px;
+  }
+  .card__search span {
+    padding: 20px;
+  }
+}

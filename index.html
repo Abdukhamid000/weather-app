@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <p data-error class="errmessage"></p>
+    <div class="card">
+      <div class="card__search">
+        <label>
+          <input type="text" placeholder="Search.." data-country />
+          <span>
+            <img src="./search.svg" alt="" />
+          </span>
+        </label>
+      </div>
+
+      <div class="card__content">
+        <div class="card__content__weather__info">
+          <h1 data-location>Weather in Hyderabad</h1>
+          <h3 data-gradus>26 °C</h3>
+          <div class="info">
+            <span>
+              <img src="./cloudsunny.svg" alt="" />
+              <span data-cloud>Cloudy</span>
+            </span>
+            <p data-humidity>Humidity: 45%</p>
+            <p data-wind-speed>Wind Speed: 3.4 km/hr</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__links">
+        <ul class="social">
+          <li>
+            <a href="https:facebebook.com">
+              <img src="./icons/facebook.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https:facebebook.com">
+              <img src="./icons/in.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https:facebebook.com">
+              <img src="./icons/twitter.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https:facebebook.com">
+              <img src="./icons/insta.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
